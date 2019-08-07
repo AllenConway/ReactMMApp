@@ -1,0 +1,108 @@
+@import "../../../../variables.scss";
+
+header {
+  box-sizing: border-box;
+  height: $header-height;
+  width: 100%;
+  background-color: $white;
+  border-bottom: 1px solid $medium-grey;
+}
+
+header img {
+  vertical-align: middle;
+}
+
+img.logo {
+  width: 160px;
+  float: left;
+  cursor: pointer;
+}
+
+img.logo:focus {
+  outline: none;
+}
+
+.user {
+  float: right;
+  line-height: 80px;
+}
+
+.help {
+  float: right;
+  line-height: 80px;
+}
+
+.client {
+  float: right;
+  line-height: 80px;
+}
+
+.search {
+  line-height: 80px;
+}
+
+//not desktop
+@media (min-width: 1px) and (max-width: 991px) {
+  img.logo {
+    padding: 18px 20px 18px 20px;
+    margin-left: 60px;
+    margin: 0 0 0 30px;
+  }
+
+  .help {
+    margin: 0 0 0 10px;
+    display: none;
+  }
+
+  .user {
+    margin: 0 10px 0 10px;
+  }
+
+  .client {
+    display: none;
+  }
+}
+
+//desktop
+@media (min-width: 992px) {
+  img.logo {
+    padding: 18px 45px 18px 45px;
+  }
+
+  .help {
+    margin: 0 0 0 34px;
+  }
+
+  .user {
+    margin: 0 45px 0 27px;
+  }
+
+  .search {
+    float: left;
+  }
+
+  .shoe-horn {
+    margin-right: 60px;
+  }
+}
+
+//phone
+@media (min-width: 1px) and (max-width: 767px) {
+  .search {
+    float: right;
+  }
+}
+
+//tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  .search {
+    float: left;
+  }
+}
+
+//tablet and phone but not desktop
+@media (min-width: 1px) and (max-width: 991px) {
+  header img.logo {
+    margin: 0 0 0 30px;
+  }
+}

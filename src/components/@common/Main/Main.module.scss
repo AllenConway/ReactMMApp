@@ -1,0 +1,45 @@
+@import "../../../../variables.scss";
+
+main {
+  margin: 0 0 0 $nav-width;
+  padding: 10px;
+  left: $nav-width;
+}
+
+//phone
+@media (min-width: 1px) and (max-width: 767px) {
+  main {
+    padding-bottom: $footer-height-mobile;
+    min-height: calc(100vh - #{$header-height} - #{$footer-height-mobile});
+  }
+}
+
+//tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  main {
+    padding-bottom: $footer-height-tablet;
+    min-height: calc(100vh - #{$header-height} - #{$footer-height-tablet});
+  }
+}
+
+//tablet and phone but not desktop
+@media (min-width: 1px) and (max-width: 991px) {
+  main {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+}
+
+//desktop
+@media (min-width: 992px) {
+  main {
+    margin: 0 0 0 $nav-width;
+    padding-bottom: $footer-height-desktop;
+    min-height: calc(100vh - $header-height - $footer-height-desktop);
+    width: calc(100% - #{$nav-width});
+  }
+
+  .shoe-horn {
+    margin-right: 60px;
+  }
+}

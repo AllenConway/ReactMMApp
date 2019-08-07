@@ -1,0 +1,144 @@
+@import "../../../../variables.scss";
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  box-sizing: border-box;
+  background: $light-grey;
+  border-top: 1px solid $mountain-green;
+  padding: 14px 25px 23px 25px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: $dark-grey;
+}
+
+.external-nav {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.contact {
+  width: 270px;
+}
+
+.footer-app-name {
+  font-size: 21px;
+  line-height: 25px;
+  color: $mountain-green;
+}
+
+.footer-service {
+  width: 60px;
+  display: inline-block;
+  font-size: 12px;
+  color: $dark-grey;
+  text-align: right;
+  margin: 0 5px;
+}
+
+.footer-phone {
+  color: $dark-grey;
+}
+
+.footer-number {
+  color: $dark-grey;
+  font-size: 18px;
+  padding-left: 10px; 
+}
+
+.contact {
+  width: 270px;
+}
+
+.footer-app-name {
+  font-size: 21px;
+  line-height: 25px;
+  color: $mountain-green;
+}
+
+.footer-service {
+  width: 60px;
+  display: inline-block;
+  font-size: 12px;
+  color: $dark-grey;
+}
+
+.footer-phone {
+  color: $dark-grey;
+}
+
+.footer-number {
+  color: $dark-grey;
+  font-size: 18px;
+}
+
+.footer-links {
+    padding-left: 5px;
+}
+
+.legal-footer {
+  color: $light-grey;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.footer-nav-wrapper {
+  float: left;
+  width: 60%;
+}
+
+@media (min-width: 1px) and (max-width: 991px) {
+  footer {
+    left: 0;
+    height: $footer-height-mobile;
+  }
+
+  .contact {
+    margin: 0 0 10px 0;
+  }
+
+  .footer-nav-wrapper {
+    width: 100%;
+  }
+}
+
+//desktop
+@media (min-width: 992px) {
+  footer {
+    left: $nav-width;
+    width: calc(100% - #{$nav-width});
+    height: $footer-height-desktop;
+  }
+
+  .contact {
+    float: right;
+  }
+
+  .footer-nav-wrapper {
+    float: left;
+    width: 60%;
+  }
+
+  .shoe-horn {
+    margin-right: 60px;
+  }
+}
+
+//tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    height: $footer-height-tablet;
+  }
+
+  .contact {
+    float: right;
+  }
+}
