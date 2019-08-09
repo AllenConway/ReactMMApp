@@ -24,11 +24,11 @@ const HeroCarousel: React.FC = () => {
           <img
             className="d-block w-100"
             src={require("../../assets/images/Cabin1.jpg")}
-            alt="First slide"
+            alt="Mountain View"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Mountain View</h3>
+            <p>Smoky Mountain West</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className={styles["carousel-container"]}>
@@ -39,8 +39,8 @@ const HeroCarousel: React.FC = () => {
           />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Hillside Escape</h3>
+            <p>Smoky Mountain North</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className={styles["carousel-container"]}>
@@ -51,10 +51,8 @@ const HeroCarousel: React.FC = () => {
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3>Bear Tracks</h3>
+            <p>Smoky Mountain South</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
