@@ -1,0 +1,14 @@
+.carousel-container {
+    width: 1080px;
+}
+
+.carousel-indicators {
+    width: 545px !important; 
+}
+
+//phone
+@media (min-width: 1px) and (max-width: 767px) {
+    .carousel-container {
+        width: 300px;
+    }
+  }
