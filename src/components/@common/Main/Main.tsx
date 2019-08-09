@@ -9,7 +9,7 @@ const Main: React.FC = () => {
   return (
     <main>
       <div className={mainClasses} />
-      <p>Welcome to Mountain Cabin Vacations</p>
+      <h1>Welcome to Mountain Cabin Vacations</h1>
       <HeroCarousel />
     </main>
   );
