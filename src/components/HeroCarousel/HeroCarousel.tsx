@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import styles from "./HeroCarousel.module.scss";
+import Greeting from "../@common/Greeting/Greeting";
 
 const HeroCarousel: React.FC = () => {
   const [index, setIndex] = useState(0);
@@ -19,6 +20,7 @@ const HeroCarousel: React.FC = () => {
 
   return (
     <div>
+      <Greeting />
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item className={styles["carousel-container"]}>
           <img
