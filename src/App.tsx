@@ -7,6 +7,7 @@ import Main from "./components/@common/Main/Main";
 import { CssBaseline, Container } from "@material-ui/core";
 
 const App: React.FC = () => {
+  document.body.style.overflow = "hidden";
   return (
     <React.Fragment>
       <CssBaseline />
