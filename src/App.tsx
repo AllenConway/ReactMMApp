@@ -6,12 +6,12 @@ import Nav from "./components/@common/Nav/Nav";
 import Main from "./components/@common/Main/Main";
 
 const App: React.FC = () => {
-    return (
+  return (
     <div className={styles["app-container"]}>
-      <Header />
-      <Nav />
-      <Main />
-      <Footer />
+        <Header />
+        <Nav />
+        <Main />
+        <Footer />
     </div>
   );
 };
