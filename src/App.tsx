@@ -4,15 +4,17 @@ import Header from "./components/@common/Header/Header";
 import Footer from "./components/@common/Footer/Footer";
 import Nav from "./components/@common/Nav/Nav";
 import Main from "./components/@common/Main/Main";
+import { CssBaseline, Container } from "@material-ui/core";
 
 const App: React.FC = () => {
   return (
-    <div className={styles["app-container"]}>
-        <Header />
-        <Nav />
-        <Main />
-        <Footer />
-    </div>
+    <React.Fragment>
+      <CssBaseline />
+      <Header />
+      <Nav />
+      <Main />
+      <Footer />
+    </React.Fragment>
   );
 };
 

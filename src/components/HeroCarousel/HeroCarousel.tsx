@@ -13,11 +13,6 @@ const HeroCarousel: React.FC = () => {
     setDirection(e.direction);
   };
 
-  var myStyle = {
-    height: 800,
-    width: 600
-  };
-
   return (
     <div>
       <Greeting />
