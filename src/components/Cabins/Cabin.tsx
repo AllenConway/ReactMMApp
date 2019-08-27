@@ -1,6 +1,6 @@
-import * as React from "react";
+import React, { useState } from "react";
 import styles from "./Cabin.module.scss";
-import Greeting from "../@common/Greeting/Greeting";
+import { CabinModel } from "../../@core/models/Cabin.model";
 import {
   Card,
   CardContent,
@@ -9,15 +9,16 @@ import {
   Button
 } from "@material-ui/core";
 
-const Cabin: React.FC = () => {
+const Cabin: React.FC<CabinModel> = (props) => {
+
   const bull = <span className={styles.bullet}>•</span>;
 
   return (
-    <>      
+    <>
       <Card className={styles.card}>
         <CardContent>
           <Typography className={styles.title} color="textSecondary">
-            Word of the Day
+            {props.name}
           </Typography>
           <Typography component="h2">
             be{bull}nev{bull}o{bull}lent
@@ -32,7 +33,7 @@ const Cabin: React.FC = () => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Learn More</Button>
+          <Button size="small">Cabin Details</Button>
         </CardActions>
       </Card>
     </>
