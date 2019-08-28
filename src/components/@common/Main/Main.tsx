@@ -1,15 +1,14 @@
 import * as React from "react";
-import styles from "./Main.module.scss";
 import HeroCarousel from "../../HeroCarousel/HeroCarousel";
 import { Route, Switch } from "react-router-dom";
 import Cabins from "../../Cabins/Cabins";
 import Reservations from "../../Reservations/Reservations";
 import CabinSpecials from "../../Cabins/CabinSpecials";
 import Admin from "../../Admin/Admin";
-import { CssBaseline, Container } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 
 const Main: React.FC = () => {
-  const mainClasses = `container-fluid ${styles["shoe-horn"]}`;
+  // const mainClasses = `container-fluid ${styles["shoe-horn"]}`;
 
   return (
     <main>

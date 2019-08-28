@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "./App.module.scss";
 import Header from "./components/@common/Header/Header";
 import Footer from "./components/@common/Footer/Footer";
 import Nav from "./components/@common/Nav/Nav";
 import Main from "./components/@common/Main/Main";
-import { CssBaseline, Container } from "@material-ui/core";
+import { CssBaseline } from "@material-ui/core";
 
 const App: React.FC = () => {
   document.body.style.overflow = "hidden";

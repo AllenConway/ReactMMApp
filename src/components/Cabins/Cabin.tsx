@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Cabin.module.scss";
 import { CabinModel } from "../../@core/models/Cabin.model";
 import {
