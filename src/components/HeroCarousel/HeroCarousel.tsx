@@ -6,11 +6,12 @@ import Greeting from "../@common/Greeting/Greeting";
 
 const HeroCarousel: React.FC = () => {
   const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(null);
+  // const [direction, setDirection] = useState(null);
 
   const handleSelect = (selectIndex, e) => {
     setIndex(selectIndex);
-    setDirection(e.direction);
+    // direction does not appear to be in the API anymore for the carousel when inspecting the CarouselProps and cant be set as an attribute on Carousel like the example
+    // setDirection(e.direction);
   };
 
   return (
