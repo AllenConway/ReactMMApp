@@ -5,16 +5,12 @@ import styles from "./HeroCarousel.module.scss";
 
 const HeroCarousel: React.FC = () => {
   const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(null);
+  // const [direction, setDirection] = useState(null);
 
   const handleSelect = (selectIndex, e) => {
     setIndex(selectIndex);
-    setDirection(e.direction);
-  };
-
-  var myStyle = {
-    height: 800,
-    width: 600
+    // direction does not appear to be in the API anymore for the carousel when inspecting the CarouselProps and cant be set as an attributoe on Carousel like the example
+    // setDirection(e.direction);
   };
 
   return (
