@@ -1,15 +1,12 @@
-import * as React from "react";
+import React, { Fragment } from "react";
 import "./Nav.scss";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import {
   RouteComponentProps,
-  NavLink,
-  Redirect,
   withRouter
 } from "react-router-dom";
-import { Fragment, useState } from "react";
 
 interface TabProps {
   id: string;
