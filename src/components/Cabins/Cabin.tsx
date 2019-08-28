@@ -21,15 +21,22 @@ const Cabin: React.FC<CabinModel> = (props) => {
             {props.name}
           </Typography>
           <Typography component="h2">
-            be{bull}nev{bull}o{bull}lent
+            {bull}{props.occupancy} bedrooms, {props.bathrooms} bathrooms
+          </Typography>
+          <Typography component="h2">
+            {bull}Sleeps {props.bedrooms}
           </Typography>
           <Typography className={styles.pos} color="textSecondary">
-            adjective
+            Location:            
+          </Typography>
+          <Typography component="h2">
+            {bull}{props.location}
+          </Typography>
+          <Typography className={styles.pos} color="textSecondary">
+            Description:
           </Typography>
           <Typography component="p">
-            well meaning and kindly.
-            <br />
-            {'"a benevolent smile"'}
+          {bull}{props.description}
           </Typography>
         </CardContent>
         <CardActions>

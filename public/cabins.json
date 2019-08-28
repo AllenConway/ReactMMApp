@@ -3,54 +3,108 @@
       "id": 1,
       "name": "Mountain View",
       "location": "Smoky Mountain West",
-      "occupancy": 4
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "occupancy": 4,
+      "description": "A beautiful cabin"
     },
     {
       "id": 2,
       "name": "Hillside Escape",
       "location": "Smoky Mountain North",
-      "occupancy": 6
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "occupancy": 6,
+      "description": "A beautiful cabin"
     },
     {
       "id": 3,
       "name": "Bear Tracks",
       "location": "Smoky Mountain South",
-      "occupancy": 12
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "occupancy": 12,
+      "description": "A beautiful cabin"
     },
     {
       "id": 4,
       "name": "Nature's Paradise",
       "location": "Smoky Mountain West",
-      "occupancy": 4
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "occupancy": 4,
+      "description": "A beautiful cabin"
     },
     {
       "id": 5,
       "name": "Eagles Ridge",
       "location": "Smoky Mountain North",
-      "occupancy": 6
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "occupancy": 6,
+      "description": "A beautiful cabin"
     },
     {
       "id": 6,
       "name": "Sunny Abundance",
       "location": "Smoky Mountain South",
-      "occupancy": 12
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "occupancy": 12,
+      "description": "A beautiful cabin"
     },
     {
       "id": 7,
       "name": "Mountain Chalet",
       "location": "Smoky Mountain West",
-      "occupancy": 4
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "occupancy": 4,
+      "description": "A beautiful cabin"
     },
     {
       "id": 8,
       "name": "Hillside Charm",
       "location": "Smoky Mountain North",
-      "occupancy": 6
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "occupancy": 6,
+      "description": "A beautiful cabin"
     },
     {
       "id": 9,
       "name": "Cozy Bear Lodge",
       "location": "Smoky Mountain South",
-      "occupancy": 12
+      "bedrooms": 4,
+      "bathrooms": 3.5,
+      "occupancy": 12,
+      "description": "A beautiful cabin"
+    },
+    {
+      "id": 10,
+      "name": "Smoky Mountain Lodge",
+      "location": "Smoky Mountain West",
+      "bedrooms": 1,
+      "bathrooms": 1.5,
+      "occupancy": 4,
+      "description": "A beautiful cabin"
+    },
+    {
+      "id": 11,
+      "name": "Papa Bear's Lodge",
+      "location": "Smoky Mountain North",
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "occupancy": 6,
+      "description": "A beautiful cabin"
+    },
+    {
+      "id": 12,
+      "name": "Lookout Lodge",
+      "location": "Smoky Mountain South",
+      "bedrooms": 5,
+      "bathrooms": 4.5,
+      "occupancy": 12,
+      "description": "A beautiful cabin"
     }
 ]

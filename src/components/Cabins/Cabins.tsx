@@ -6,8 +6,7 @@ import { CabinModel } from "../../@core/models/Cabin.model";
 
 const Cabins: React.FC = () => {
   //use React hooks
-  const [cabinData, setCabinData] = useState<CabinModel[]>([]);
-  const [cabinId, setCabinId] = useState(0);
+  const [cabinData, setCabinData] = useState<CabinModel[]>([]);  
 
   useEffect(() => {
     // ensure mock data is in /public folder so it can be fetched locally without getting a 404 in the browser
@@ -18,7 +17,7 @@ const Cabins: React.FC = () => {
 
   return (
     <>
-      <Greeting greetingMessage="Hello from Cabins" />
+      <Greeting greetingMessage="Mountain Vacation Cabins" />
       <Grid container spacing={4}>
         {cabinData.map(cabin => (          
           <Grid key={cabin.id} item md={3}>
