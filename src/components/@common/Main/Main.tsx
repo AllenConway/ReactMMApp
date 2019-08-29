@@ -1,4 +1,5 @@
 import * as React from "react";
+import styles from "./Main.module.scss";
 import HeroCarousel from "../../HeroCarousel/HeroCarousel";
 import { Route, Switch } from "react-router-dom";
 import Cabins from "../../Cabins/Cabins";
@@ -8,7 +9,8 @@ import Admin from "../../Admin/Admin";
 import { Container } from "@material-ui/core";
 
 const Main: React.FC = () => {
-  // const mainClasses = `container-fluid ${styles["shoe-horn"]}`;
+  // eslint-disable-next-line
+  const cssStyles = styles;
 
   return (
     <main>
