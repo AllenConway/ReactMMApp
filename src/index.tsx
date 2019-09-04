@@ -5,6 +5,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "./index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { createStore } from 'redux';
+
+const store = createStore();
 
 ReactDOM.render(
   <Router>
