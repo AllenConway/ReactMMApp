@@ -3,16 +3,17 @@ import Greeting from "../@common/Greeting/Greeting";
 import { Grid } from "@material-ui/core";
 import Cabin from "./Cabin";
 import { CabinModel } from "../../@core/models/Cabin.model";
+import CabinsApiService from '../../api/cabins.api.service';
 
 const Cabins: React.FC = () => {
   //use React hooks
   const [cabinData, setCabinData] = useState<CabinModel[]>([]);  
 
   useEffect(() => {
-    // ensure mock data is in /public folder so it can be fetched locally without getting a 404 in the browser
-    fetch("cabins.json")
-      .then(response => response.json())
-      .then(data => setCabinData(data));
+
+    CabinsApiService.getCabins()
+    .then(async data => await setCabinData(data));
+    
   });
 
   return (
