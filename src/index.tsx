@@ -5,9 +5,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "./index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { createStore } from 'redux';
+import { createStore } from "redux";
+import fetchCabinReducer from "./reducers/fetchCabinDetailsReducer";
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-const store = createStore();
+//Create the Redux store using the redux-devtools-extension which will allow us to inspect the state
+export const store = createStore(fetchCabinReducer, composeWithDevTools());
 
 ReactDOM.render(
   <Router>
