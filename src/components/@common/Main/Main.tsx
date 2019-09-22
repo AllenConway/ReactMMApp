@@ -2,12 +2,12 @@ import * as React from "react";
 import styles from "./Main.module.scss";
 
 const Main: React.FC = () => {
-  const mainClasses = `container-fluid ${styles["shoe-horn"]}`;
+  
+  const mainClasses = `${styles.title} ${styles["title-main"]}`;
 
   return (
     <main>
-      <div className={mainClasses} />
-      <p>Welcome to Mountain Cabin Vacations</p>
+      <h1 className={mainClasses}>Welcome to Mountain Cabin Vacations</h1>
     </main>
   );
 };
