@@ -13,7 +13,7 @@ const Cabins: React.FC = () => {
     fetch("cabins.json")
       .then(response => response.json())
       .then(data => setCabinData(data));
-  });
+  }, []);
 
   return (
     <>
