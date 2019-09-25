@@ -6,6 +6,7 @@ import Nav from "./components/@common/Nav/Nav";
 import Main from "./components/@common/Main/Main";
 
 const App: React.FC = () => {
+    document.body.style.overflow = "hidden";
     return (
     <div className={styles["app-container"]}>
       <Header />
