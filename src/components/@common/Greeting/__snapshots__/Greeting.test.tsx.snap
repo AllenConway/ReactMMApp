@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grreting component Matches the snapshot 1`] = `
+<h1>
+  Welcome to Mountain Cabin Vacations
+</h1>
+`;
