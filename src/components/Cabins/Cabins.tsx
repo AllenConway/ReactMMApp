@@ -14,7 +14,7 @@ const Cabins: React.FC = () => {
     CabinsApiService.getCabins()
     .then(async data => await setCabinData(data));
     
-  });
+  }, []);
 
   return (
     <>
