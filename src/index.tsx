@@ -13,14 +13,26 @@ import fetchCabinDetailsReducer from "./reducers/fetchCabinDetailsReducer";
 //Create the Redux store using the redux-devtools-extension which will allow us to inspect the state
 export const store = createStore(fetchCabinDetailsReducer, composeWithDevTools());
 
-ReactDOM.render(
+const container = document.getElementById("root");
+// @ts-ignore
+const root = ReactDOM.createRoot(container)  
+
+root.render(
   <Provider store={store}>
     <Router>
       <App />
     </Router>
-  </Provider>,
-  document.getElementById("root")
+  </Provider>
 );
+
+// ReactDOM.render(
+//   <Provider store={store}>
+//     <Router>
+//       <App />
+//     </Router>
+//   </Provider>,
+//   document.getElementById("root")
+// );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

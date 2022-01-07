@@ -35,7 +35,7 @@ const StyledMenu = withStyles({
       vertical: "top",
       horizontal: "center"
     }}
-    open={false}
+    // open={false}
     {...props}
   />
 ));
