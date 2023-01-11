@@ -3,7 +3,7 @@ import Header from "./components/@common/Header/Header";
 import Footer from "./components/@common/Footer/Footer";
 import Nav from "./components/@common/Nav/Nav";
 import Main from "./components/@common/Main/Main";
-import { CssBaseline } from "@material-ui/core";
+import { CssBaseline } from "@mui/material";
 
 const App: React.FC = () => {
   document.body.style.overflow = "hidden";

@@ -7,7 +7,7 @@ import {
   Typography,
   CardActions,
   Button
-} from "@material-ui/core";
+} from "@mui/material";
 
 const Cabin: React.FC<CabinModel> = (props) => {
 

@@ -1,12 +1,12 @@
 import * as React from "react";
 import styles from "./Main.module.scss";
 import HeroCarousel from "../../HeroCarousel/HeroCarousel";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router";
 import Cabins from "../../Cabins/Cabins";
 import Reservations from "../../Reservations/Reservations";
 import CabinSpecials from "../../Cabins/CabinSpecials";
 import Admin from "../../Admin/Admin";
-import { Container } from "@material-ui/core";
+import { Container } from "@mui/material";
 
 const Main: React.FC = () => {
   // eslint-disable-next-line

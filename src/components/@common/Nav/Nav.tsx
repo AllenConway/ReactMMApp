@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
 import "./Nav.scss";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
+import { Tab, Tabs } from "@mui/material";
+import { makeStyles, createStyles } from '@mui/material/styles';
 import {
   RouteComponentProps,
   withRouter
@@ -26,26 +25,26 @@ function a11yProps(index: any, toValue: string): TabProps {
   };
 }
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      flexGrow: 1,
-      backgroundColor: theme.palette.background.paper,
-      display: "block",
-      height: 224
-    },
-    tabs: {
-      borderRight: `1px solid ${theme.palette.divider}`
-    }
-  })
-);
+// const useStyles = makeStyles((theme: Theme) =>
+//   createStyles({
+//     root: {
+//       flexGrow: 1,
+//       backgroundColor: theme.palette.background.paper,
+//       display: "block",
+//       height: 224
+//     },
+//     tabs: {
+//       borderRight: `1px solid ${theme.palette.divider}`
+//     }
+//   })
+// );
 
 interface NavComponentProps extends RouteComponentProps<any> {
   /* other props for ChildComponent */
 }
 
 const Nav: React.FC<NavComponentProps> = (props: NavComponentProps) => {
-  const classes = useStyles();
+  // const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
   function handleChange(event: React.ChangeEvent<{}>, newValue: number) {
@@ -73,10 +72,11 @@ const Nav: React.FC<NavComponentProps> = (props: NavComponentProps) => {
     props.history.push(redirectToValue);
   }
 
-  const mainClasses = `nav ${classes.root}`;
+  // const mainClasses = `nav ${classes.root}`;
 
   return (
-    <nav className={mainClasses}>
+    // <nav className={mainClasses}>
+    <nav>
       <div>
         <Fragment>
           <Tabs
@@ -85,7 +85,7 @@ const Nav: React.FC<NavComponentProps> = (props: NavComponentProps) => {
             value={value}
             onChange={handleChange}
             aria-label="Vertical tabs example"
-            className={classes.tabs}
+            // className={classes.tabs}
           >            
             <Tab label="Home" {...a11yProps(0, "/")} />
             <Tab label="Cabins" {...a11yProps(1, "/cabins")} />

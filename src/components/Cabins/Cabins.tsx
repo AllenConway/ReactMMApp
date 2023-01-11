@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Greeting from "../@common/Greeting/Greeting";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 import Cabin from "./Cabin";
 import { CabinModel } from "../../@core/models/Cabin.model";
 import CabinsApiService from "../../api/cabins.api.service";
@@ -13,7 +13,7 @@ const Cabins: React.FC = () => {
   const dispatch = useDispatch();
   // useSelector will subscribe to the Redux store, and run this selector whenever an action is dispatched
   // A cached result may be returned if the selector has been run and hasn't changed
-  const cabinData: CabinModel[] = useSelector(state => state);
+  const cabinData: CabinModel[] = useSelector(state => state) as CabinModel[];
 
   useEffect(() => {
     //Dispatch the fetchDetailsAction

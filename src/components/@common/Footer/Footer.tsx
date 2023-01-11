@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./Footer.module.scss";
-import PhoneIcon from "@material-ui/icons/Phone";
+import PhoneIcon from "@mui/icons-material";
 import { Link } from 'react-router-dom';
 
 
@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
     <footer>
         <div className={styles.contact}>
             <div className={styles["footer-app-name"]}>Mountain Cabin Vacations</div>          
-            <PhoneIcon />
+            {/* <PhoneIcon /> */}
             <span className={styles["footer-number"]}>(888) 555-1234</span>
         </div>
         <span className={styles["footer-nav-wrapper"]}>

@@ -1,15 +1,15 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import HelpIcon from "@material-ui/icons/HelpOutline";
-import ContactSupport from "@material-ui/icons/ContactSupport";
-import Chat from "@material-ui/icons/Chat";
-import ThumbUp from "@material-ui/icons/ThumbUp";
+import { withStyles } from "@mui/material/styles";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import HelpIcon from "@mui/icons-material/HelpOutline";
+import ContactSupport from "@mui/icons-material/ContactSupport";
+import Chat from "@mui/icons-material/Chat";
+import ThumbUp from "@mui/icons-material/ThumbUp";
 import styles from "./Help.module.scss";
-import { IconButton } from "@material-ui/core";
+import { IconButton } from "@mui/material";
 
 interface StyledMenuProps {
   id: string;
@@ -19,37 +19,37 @@ interface StyledMenuProps {
   onClose: any;
 }
 
-const StyledMenu = withStyles({
-  paper: {
-    border: "1px solid #d3d4d5"
-  }
-})((props: StyledMenuProps) => (
-  <Menu
-    elevation={0}
-    getContentAnchorEl={null}
-    anchorOrigin={{
-      vertical: "bottom",
-      horizontal: "center"
-    }}
-    transformOrigin={{
-      vertical: "top",
-      horizontal: "center"
-    }}
-    // open={false}
-    {...props}
-  />
-));
+// const StyledMenu = withStyles({
+//   paper: {
+//     border: "1px solid #d3d4d5"
+//   }
+// })((props: StyledMenuProps) => (
+//   <Menu
+//     elevation={0}
+//     getContentAnchorEl={null}
+//     anchorOrigin={{
+//       vertical: "bottom",
+//       horizontal: "center"
+//     }}
+//     transformOrigin={{
+//       vertical: "top",
+//       horizontal: "center"
+//     }}
+//     // open={false}
+//     {...props}
+//   />
+// ));
 
-const StyledMenuItem = withStyles(theme => ({
-  root: {
-    "&:focus": {
-      backgroundColor: theme.palette.primary.main,
-      "& .MuiListItemIcon-root, & .MuiListItemText-primary": {
-        color: theme.palette.common.white
-      }
-    }
-  }
-}))(MenuItem);
+// const StyledMenuItem = withStyles(theme => ({
+//   root: {
+//     "&:focus": {
+//       backgroundColor: theme.palette.primary.main,
+//       "& .MuiListItemIcon-root, & .MuiListItemText-primary": {
+//         color: theme.palette.common.white
+//       }
+//     }
+//   }
+// }))(MenuItem);
 
 export default function Help() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -72,7 +72,7 @@ export default function Help() {
       >
         <HelpIcon />
       </IconButton>
-      <StyledMenu
+      {/* <StyledMenu
         id="customized-menu"
         anchorEl={anchorEl}
         keepMounted
@@ -97,7 +97,7 @@ export default function Help() {
           </ListItemIcon>
           <ListItemText primary="Feedback" />
         </StyledMenuItem>
-      </StyledMenu>
+      </StyledMenu> */}
     </div>
   );
 }
